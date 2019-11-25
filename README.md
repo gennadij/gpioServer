@@ -9,14 +9,31 @@ Die Beschreibung folgt.
 ### Prerequisites
 
 Die Beschreibung folgt.
+Folgende Packete und Anwendungen müssen installiert werden.
+
+openssl
 
 ### Installing
 
-Die Beschreibung folgt.
+Für eine HTTPS-Verbindung zu dem AWS-Server wird eine Zertifikat benötig. 
+Um einen eigenen Zertifikat zu erstellen werdn folgende Befehle ausgeführt.
+
+cd httpsAWSInterface
+mkdir encryption
+openssl genrsa -out privatekey.pem 1024
+openssl req -new -key privatekey.pem -out certrequest.csr
+openssl x509 -req -in certrequest.csr -signkey privatekey.pem -out certificate.pem
+
+Um die Zustand der geschalteten Pin festzuhalten muss follgende Verzeichnis angelegt werden.
+
+cd db
+mkdir gpioState
+
+
 
 ## Authors
 
-**Gennadi Heimann
+* **Gennadi Heimann
 
 ## License
 

@@ -1,0 +1,221 @@
+{"endpoints" :
+[
+  {
+      "endpointId": "l001",
+      "manufacturerName": "Musterfirma",
+      "friendlyName": "wohnen links",
+      "description": "Licht in dem Wohnzimmer links",
+      "displayCategories": ["LIGHT"],
+      "cookie": {},
+      "capabilities":
+      [
+          {
+            "type": "AlexaInterface",
+            "interface": "Alexa",
+            "version": "3"
+          },
+          {
+              "interface": "Alexa.PowerController",
+              "version": "3",
+              "type": "AlexaInterface",
+              "properties": {
+                  "supported": [{
+                      "name": "powerState"
+                  }],
+                    "proactivelyReported": true,
+                    "retrievable": true
+              }
+          }
+      ]
+  },
+  {
+      "endpointId": "l002",
+      "manufacturerName": "Musterfirma",
+      "friendlyName": "wohnen rechts",
+      "description": "Licht in dem Wohnen Rechts",
+      "displayCategories": ["LIGHT"],
+      "cookie": {},
+      "capabilities":
+      [
+          {
+            "type": "AlexaInterface",
+            "interface": "Alexa",
+            "version": "3"
+          },
+          {
+              "interface": "Alexa.PowerController",
+              "version": "3",
+              "type": "AlexaInterface",
+              "properties": {
+                  "supported": [{
+                      "name": "powerState"
+                  }],
+                    "retrievable": true
+              }
+          }
+      ]
+  },
+  {
+      "endpointId": "l003",
+      "manufacturerName": "Musterfirma",
+      "friendlyName": "kinder artiom",
+      "description": "Licht in dem Artioms Kinderzimmer",
+      "displayCategories": ["LIGHT"],
+      "cookie": {},
+      "capabilities":
+      [
+          {
+            "type": "AlexaInterface",
+            "interface": "Alexa",
+            "version": "3"
+          },
+          {
+              "interface": "Alexa.PowerController",
+              "version": "3",
+              "type": "AlexaInterface",
+              "properties": {
+                  "supported": [{
+                      "name": "powerState"
+                  }],
+                    "retrievable": true
+              }
+          }
+      ]
+  },
+  {
+      "endpointId": "l004",
+      "manufacturerName": "Musterfirma",
+      "friendlyName": "garderobe",
+      "description": "Licht in Garderobe",
+      "displayCategories": ["LIGHT"],
+      "cookie": {},
+      "capabilities":
+      [
+          {
+            "type": "AlexaInterface",
+            "interface": "Alexa",
+            "version": "3"
+          },
+          {
+              "interface": "Alexa.PowerController",
+              "version": "3",
+              "type": "AlexaInterface",
+              "properties": {
+                  "supported": [{
+                      "name": "powerState"
+                  }],
+                    "retrievable": true
+              }
+          }
+      ]
+  },
+  {
+      "endpointId": "l005",
+      "manufacturerName": "Musterfirma",
+      "friendlyName": "flur",
+      "description": "Licht in Flur",
+      "displayCategories": ["LIGHT"],
+      "cookie": {},
+      "capabilities":
+      [
+          {
+            "type": "AlexaInterface",
+            "interface": "Alexa",
+            "version": "3"
+          },
+          {
+              "interface": "Alexa.PowerController",
+              "version": "3",
+              "type": "AlexaInterface",
+              "properties": {
+                  "supported": [{
+                      "name": "powerState"
+                  }],
+                    "retrievable": true
+              }
+          }
+      ]
+  },
+  {
+      "endpointId": "l006",
+      "manufacturerName": "Musterfirma",
+      "friendlyName": "küche",
+      "description": "Licht in der Küche",
+      "displayCategories": ["LIGHT"],
+      "cookie": {},
+      "capabilities":
+      [
+          {
+            "type": "AlexaInterface",
+            "interface": "Alexa",
+            "version": "3"
+          },
+          {
+              "interface": "Alexa.PowerController",
+              "version": "3",
+              "type": "AlexaInterface",
+              "properties": {
+                  "supported": [{
+                      "name": "powerState"
+                  }],
+                    "retrievable": true
+              }
+          }
+      ]
+  },
+  {
+      "endpointId": "l007",
+      "manufacturerName": "Musterfirma",
+      "friendlyName": "arbeitsplatte",
+      "description": "Licht für die Arbeitsplatte",
+      "displayCategories": ["LIGHT"],
+      "cookie": {},
+      "capabilities":
+      [
+          {
+            "type": "AlexaInterface",
+            "interface": "Alexa",
+            "version": "3"
+          },
+          {
+              "interface": "Alexa.PowerController",
+              "version": "3",
+              "type": "AlexaInterface",
+              "properties": {
+                  "supported": [{
+                      "name": "powerState"
+                  }],
+                    "retrievable": true
+              }
+          }
+      ]
+  },
+  {
+      "endpointId": "l008",
+      "manufacturerName": "Musterfirma",
+      "friendlyName": "küche rechts",
+      "description": "Licht in der Kücher über die Schränke",
+      "displayCategories": ["LIGHT"],
+      "cookie": {},
+      "capabilities":
+      [
+          {
+            "type": "AlexaInterface",
+            "interface": "Alexa",
+            "version": "3"
+          },
+          {
+              "interface": "Alexa.PowerController",
+              "version": "3",
+              "type": "AlexaInterface",
+              "properties": {
+                  "supported": [{
+                      "name": "powerState"
+                  }],
+                    "retrievable": true
+              }
+          }
+      ]
+  }
+]
+}

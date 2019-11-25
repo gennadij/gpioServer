@@ -1,0 +1,232 @@
+{
+  "devices" : [
+    {
+      "name" : "wohnen links",
+      "id" : "d001",
+      "control" : "lighting",
+      "actors" : [
+        {
+          "id" : "a001",
+          "gpio" : 8,
+          "gpioObject" : "",
+          "description" : ""
+        }
+      ],
+      "sensors" : [
+        {
+          "id" : "s001",
+          "gpio" : 7,
+          "gpioObject" : "",
+          "description" : ""
+        }
+      ]
+    },
+    {
+      "name" : "wohnen rechts",
+      "id" : "d002",
+      "control" : "lighting",
+      "actors" : [
+        {
+          "id" : "a002",
+          "gpio" : 18,
+          "gpioObject" : "",
+          "description" : ""
+        }
+      ],
+      "sensors" : [
+        {
+          "id" : "s002",
+          "gpio" : 23,
+          "gpioObject" : "",
+          "description" : ""
+        }
+      ]
+    },
+    {
+      "name" : "kinder artiom",
+      "id" : "d003",
+      "control" : "lighting",
+      "actors" : [
+        {
+          "id" : "a003",
+          "gpio" : 24,
+          "gpioObject" : "",
+          "description" : ""
+        }
+      ],
+      "sensors" : [
+        {
+          "id" : "s003",
+          "gpio" : 25,
+          "gpioObject" : "",
+          "description" : ""
+        }
+      ]
+    },
+    {
+      "name" : "rollade WC EG",
+      "id" : "d004",
+      "control" : "shutter",
+      "actors" : [
+        {
+          "id" : "a004",
+          "gpio" : 6,
+          "gpioObject" : "",
+          "description" : "ROOT"
+        },
+        {
+          "id" : "a005",
+          "gpio" : 13,
+          "gpioObject" : "",
+          "description" : "UPDOWN"
+        }
+      ],
+      "sensors" : []
+    },
+    {
+      "name" : "rolllade kueche links",
+      "id" : "d005",
+      "control" : "shutter",
+      "actors" : [
+        {
+          "id" : "a006",
+          "gpio" : 12,
+          "gpioObject" : "",
+          "description" : "ROOT"
+        },
+        {
+          "id" : "a007",
+          "gpio" : 16,
+          "gpioObject" : "",
+          "description" : "UPDOWN"
+        }
+      ],
+      "sensors" : []
+    },
+    {
+      "name" : "rolllade kueche rechts",
+      "id" : "d006",
+      "control" : "shutter",
+      "actors" : [
+        {
+          "id" : "a008",
+          "gpio" : 20,
+          "gpioObject" : "",
+          "description" : "ROOT"
+        },
+        {
+          "id" : "a009",
+          "gpio" : 21,
+          "gpioObject" : "",
+          "description" : "UPDOWN"
+        }
+      ],
+      "sensors" : []
+    },
+    {
+      "name" : "garderobe",
+      "id" : "d007",
+      "control" : "lighting",
+      "actors" : [
+        {
+          "id" : "a010",
+          "gpio" : 2,
+          "gpioObject" : "",
+          "description" : ""
+        }
+      ],
+      "sensors" : [
+        {
+          "id" : "s004",
+          "gpio" : 3,
+          "gpioObject" : "",
+          "description" : ""
+        }
+      ]
+    },
+    {
+      "name" : "flur",
+      "id" : "d008",
+      "control" : "lighting",
+      "actors" : [
+        {
+          "id" : "a011",
+          "gpio" : 4,
+          "gpioObject" : "",
+          "description" : ""
+        }
+      ],
+      "sensors" : [
+        {
+          "id" : "s005",
+          "gpio" : 17,
+          "gpioObject" : "",
+          "description" : ""
+        }
+      ]
+    },
+    {
+      "name" : "essen",
+      "id" : "d009",
+      "control" : "lighting",
+      "actors" : [
+        {
+          "id" : "a012",
+          "gpio" : 27,
+          "gpioObject" : "",
+          "description" : ""
+        }
+      ],
+      "sensors" : [
+        {
+          "id" : "s005",
+          "gpio" : 22,
+          "gpioObject" : "",
+          "description" : ""
+        }
+      ]
+    },
+    {
+      "name" : "arbeitsplatte",
+      "id" : "d010",
+      "control" : "lighting",
+      "actors" : [
+        {
+          "id" : "a013",
+          "gpio" : 10,
+          "gpioObject" : "",
+          "description" : ""
+        }
+      ],
+      "sensors" : [
+        {
+          "id" : "s006",
+          "gpio" : 9,
+          "gpioObject" : "",
+          "description" : ""
+        }
+      ]
+    },
+    {
+      "name" : "essen schrank",
+      "id" : "d011",
+      "control" : "lighting",
+      "actors" : [
+        {
+          "id" : "a014",
+          "gpio" : 11,
+          "gpioObject" : "",
+          "description" : ""
+        }
+      ],
+      "sensors" : [
+        {
+          "id" : "s007",
+          "gpio" : 5,
+          "gpioObject" : "",
+          "description" : ""
+        }
+      ]
+    } 
+  ]
+}
