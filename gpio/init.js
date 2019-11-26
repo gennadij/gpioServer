@@ -7,7 +7,11 @@ module.exports.initDevices = function(params) {
   const pathToFileGpioDevices = params.pathToFileGpioDevices
   //Lese difenierte Devices
   const jsonDevices = JSON.parse(fs.readFileSync(pathToFileGpioDevices));
-  
+  //Erstalle Ordner gpioState falls nicht geschehen
+  var dirGpioState = "./db/gpioState"
+  if(!fs.existsSync(dirGpioState)) {
+    fs.mkdirSync(dirGpioState)
+  }
   // Erstelle fuer jeden Device einen GPIO Objekt
   jsonDevices.devices.forEach(function(device){
     device.actors.forEach(function(actor){
