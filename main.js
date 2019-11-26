@@ -62,8 +62,6 @@ httpPostPutInterface.httpPostPutInterface(paramsHttpPostPutInterface)
 //AWS HTTPS-SERVER
 const awsServer = express();
 
-logger.info("initDescover " + initDescoveryEndpoints)
-logger.info("requestHandler " + awsRequestHandler)
 paramsAWSInterface = {
   logger : logger,
   https : https,
