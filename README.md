@@ -18,7 +18,7 @@ openssl
 Für eine HTTPS-Verbindung zu dem AWS-Server wird eine Zertifikat benötig. 
 Um einen eigenen Zertifikat zu erstellen werdn folgende Befehle ausgeführt.
 
-```console
+```bash
 mkdir encryption
 ```
 openssl genrsa -out privatekey.pem 1024
