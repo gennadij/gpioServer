@@ -1,3 +1,6 @@
+#own
+db/gpioState/
+
 # Logs
 logs
 *.log
