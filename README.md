@@ -20,18 +20,11 @@ Um einen eigenen Zertifikat zu erstellen werdn folgende Befehle ausgeführt.
 
 ```console
 mkdir encryption
-```
-```console
 cd encryption
-```
-```console
 openssl genrsa -out privatekey.pem 1024
-```
-```console
 openssl req -new -key privatekey.pem -out certrequest.csr
+openssl x509 -req -in certrequest.csr -signkey privatekey.pem -out certificate.pem
 ```
-```console
-openssl x509 -req -in certrequest.csr -signkey privatekey.pem -out certificate.pem```
 
 ## Authors
 
