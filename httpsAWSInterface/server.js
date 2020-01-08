@@ -15,34 +15,36 @@ module.exports.awsInterface = function(params) {
   const pathToFileDescoveryEndpoints = params.pathToFileDescoveryEndpoints
   const pathToFileGpioDevices = params.pathToFileGpioDevices
 
-  awsServer.use(bodyParser.urlencoded({extended: true}))
-  awsServer.use(bodyParser.json())
+  awsServer.use(bodyParser.urlencoded({extended: true}));
+  awsServer.use(bodyParser.json());
 
   var options = {
     key : fs.readFileSync('./httpsAWSInterface/encryption/privatekey.pem'),
     cert : fs.readFileSync( './httpsAWSInterface/encryption/certificate.pem')
   }
-  
+  logger.info(initDescoveryEndpoints)
   awsServer.use((req, res, next) => {
-    const paramsRequestHandler = {
-      event : req.body,
-      piGpioObjectsAndDevices : piGpioObjectsAndDevices,
-      fs : fs,
-      logger : logger,
-      lightingControl : lightingControl,
-      pathToDirGpioState : pathToDirGpioState,
-      fileExtensionForGioState : fileExtensionForGioState,
-      initDescoveryEndpoints : initDescoveryEndpoints,
-      pathToFileDescoveryEndpoints : pathToFileDescoveryEndpoints,
-      pathToFileGpioDevices : pathToFileGpioDevices
+    if (req.path == "/gennadiHeimann") {
+      const paramsRequestHandler = {
+        event : req.body,
+        piGpioObjectsAndDevices : piGpioObjectsAndDevices,
+        fs : fs,
+        logger : logger,
+        lightingControl : lightingControl,
+        pathToDirGpioState : pathToDirGpioState,
+        fileExtensionForGioState : fileExtensionForGioState,
+        initDescoveryEndpoints : initDescoveryEndpoints,
+        pathToFileDescoveryEndpoints : pathToFileDescoveryEndpoints,
+	pathToFileGpioDevices : pathToFileGpioDevices
+      }
+      res.json(
+        requestHandler.handleRequest(paramsRequestHandler)
+      );
     }
-    res.json(
-      requestHandler.handleRequest(paramsRequestHandler)
-    )
-  })
+  });
 
   var server = https.createServer(options, awsServer).listen(port, function() {
-    logger.info("Common Server started" )
+    logger.info("Common Server started" );
     logger.info("Common Server listning at http://" + server.address().address + ":" + server.address().port + ".");
-  })
+  });
 }

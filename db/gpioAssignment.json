@@ -1,0 +1,134 @@
+{
+  "gpios" : [
+    {
+      "gpio" : 2,
+      "direction" : "OUT",
+      "gpioObject" : ""
+    },
+    {
+      "gpio" : 3,
+      "direction" : "IN",
+      "gpioObject" : ""
+    },
+    {
+      "gpio" : 4,
+      "direction" : "OUT",
+      "gpioObject" : ""
+    },
+    {
+      "gpio" : 5,
+      "direction" : "IN",
+      "gpioObject" : ""
+    },
+    {
+      "gpio" : 6,
+      "direction" : "OUT",
+      "gpioObject" : ""
+    },
+    {
+      "gpio" : 7,
+      "direction" : "IN",
+      "gpioObject" : ""
+    },
+    {
+      "gpio" : 8,
+      "direction" : "OUT",
+      "gpioObject" : ""
+    },
+    {
+      "gpio" : 9,
+      "direction" : "IN",
+      "gpioObject" : ""
+    },
+    {
+      "gpio" : 10,
+      "direction" : "OUT",
+      "gpioObject" : ""
+    },
+    {
+      "gpio" : 11,
+      "direction" : "OUT",
+      "gpioObject" : ""
+    },
+    {
+      "gpio" : 12,
+      "direction" : "OUT",
+      "gpioObject" : ""
+    },
+    {
+      "gpio" : 13,
+      "direction" : "OUT",
+      "gpioObject" : ""
+    },
+    {
+      "gpio" : 14,
+      "direction" : "",
+      "gpioObject" : ""
+    },
+    {
+      "gpio" : 15,
+      "direction" : "",
+      "gpioObject" : ""
+    },
+    {
+      "gpio" : 16,
+      "direction" : "OUT",
+      "gpioObject" : ""
+    },
+    {
+      "gpio" : 17,
+      "direction" : "IN",
+      "gpioObject" : ""
+    },
+    {
+      "gpio" : 18,
+      "direction" : "OUT",
+      "gpioObject" : ""
+    },
+    {
+      "gpio" : 19,
+      "direction" : "",
+      "gpioObject" : ""
+    },
+    {
+      "gpio" : 20,
+      "direction" : "OUT",
+      "gpioObject" : ""
+    },
+    {
+      "gpio" : 21,
+      "direction" : "OUT",
+      "gpioObject" : ""
+    },
+    {
+      "gpio" : 22,
+      "direction" : "IN",
+      "gpioObject" : ""
+    },
+    {
+      "gpio" : 23,
+      "direction" : "IN",
+      "gpioObject" : ""
+    },
+    {
+      "gpio" : 24,
+      "direction" : "OUT",
+      "gpioObject" : ""
+    },
+    {
+      "gpio" : 25,
+      "direction" : "IN",
+      "gpioObject" : ""
+    },
+    {
+      "gpio" : 26,
+      "direction" : "",
+      "gpioObject" : ""
+    },
+    {
+      "gpio" : 27,
+      "direction" : "OUT",
+      "gpioObject" : ""
+    }
+  ]
+}

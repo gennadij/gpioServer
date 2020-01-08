@@ -1,13 +1,16 @@
 //included
-//const http = require('http');
-const https = require('https');
-const fs = require('fs');
+const https = require('https')
+const fs = require('fs')
 //installed
-const express = require('express');
-const winston = require('winston');
-const pigpio = require('pigpio').Gpio;
-const bodyParser = require('body-parser');
+const express = require('express')
+const winston = require('winston')
+const pigpio = require('pigpio').Gpio
+const bodyParser = require('body-parser')
+const webSocket = require('ws')
 //own
+const adminWsMessageHandler = require('./webAdminInterface/wsServer/messageHandler.js')
+const adminWebServer = require('./webAdminInterface/webServer/webServer.js')
+const adminWsServer = require('./webAdminInterface/wsServer/wsServer.js')
 const initDevices = require("./gpio/init.js");
 const httpPostPutInterface = require("./httpPostPutInterface/server.js")
 const lightingControl = require("./gpio/lightingControl.js")
@@ -27,7 +30,23 @@ const fileExtensionForGioState = ".txt"
 const pathToFileGpioDevices = "./db/gpioDevices/gpioDevices.json"
 const pathToFileDescoveryEndpoints = "./db/alexaDevices/descovery.json"
 
-//TODO gpioState in Json-File spereichern
+//HTTP-SERVER fuer Admin
+var paramsAdminWebServer = {
+  express : express,
+  logger : logger,
+  port : 50002
+} 
+adminWebServer.startWebServer(paramsAdminWebServer);
+
+//GPIO WS-SERVER fuer Admin
+var paramsAdminWsServer = {
+  logger : logger,
+  webSocket : webSocket,
+  port : 50003,
+  adminWsMessageHandler : adminWsMessageHandler,
+  pathToFileGpioDevices : pathToFileGpioDevices
+}
+adminWsServer.startWsServer(paramsAdminWsServer);
 
 //INIT GPIO 
 const paramsInit = {
@@ -43,7 +62,7 @@ const piGpioObjectsAndDevices = initDevices.initDevices(paramsInit)
 
 //HTTP POST and PUT Interface
 
-paramsHttpPostPutInterface = {
+var paramsHttpPostPutInterface = {
   express : express,
   logger : logger,
   bodyParser: bodyParser,

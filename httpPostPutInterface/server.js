@@ -12,15 +12,25 @@ module.exports.httpPostPutInterface = function (params) {
 
   var globalVar = params.globalVar
 
-  countdownShutter = globalVar.countdownShutter
+  var countdownShutter = globalVar.countdownShutter
+<<<<<<< HEAD
+  var timeouts = globalVar.timeouts 
 
   const server = express();
+=======
+
+  var timeouts = globalVar.timeouts
+  //TODO gehoert nicht zum Server
+  initDalayShutterRoot()
+
+  const server = express()
+>>>>>>> dalayForShutter
   
-  server.use(bodyParser.text({type: "text/plain"}));
+  server.use(bodyParser.text({type: "text/plain"}))
 
   piGpioObjectsAndDevices.forEach(function(device){
             
-    const pathForPOSTAndGET = "/" + device.control + "/myhome/" + device.id;
+    const pathForPOSTAndGET = "/" + device.control + "/myhome/" + device.id
     
     logger.info("Path for action : " + pathForPOSTAndGET ) 
 
@@ -47,7 +57,8 @@ module.exports.httpPostPutInterface = function (params) {
           device : device,
           fs : fs,
           logger : logger,
-          countdownShutter : countdownShutter
+          countdownShutter : countdownShutter,
+          timeouts : timeouts
         }
         shutterControl.shutterControl(paramsShuterControl)
       }else {
@@ -74,4 +85,19 @@ module.exports.httpPostPutInterface = function (params) {
     logger.info("Web Server started" );
     logger.info("Web Server listning at http://" + s.address().address + ":" + s.address().port);
   });
+
+  function initDalayShutterRoot() {
+    piGpioObjectsAndDevices.forEach(piGpioDevice => {
+      if(piGpioDevice.control == "shutter"){
+        piGpioDevice.actors.forEach(actor => {
+          if(actor.description == "ROOT"){
+            globalVar.timeouts.push({
+              id : piGpioDevice.id,
+              timeout : null
+            })
+          }
+        })
+      }
+    })
+  }
 }

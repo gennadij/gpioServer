@@ -28,8 +28,8 @@ module.exports.initDevices = function(params) {
   
   function createPigpioOutObjectForLighting(actor, device){
     actor.gpioObject = new Gpio(actor.gpio, {mode: Gpio.OUTPUT})
-      actor.gpioObject.digitalWrite(1);
-      fs.writeFileSync(pathToDirGpioState + device.id + "_" + actor.id  + fileExtensionForGioState, "OFF")
+    actor.gpioObject.digitalWrite(1)
+    fs.writeFileSync(pathToDirGpioState + device.id + "_" + actor.id  + fileExtensionForGioState, "OFF")
   }
 
   function createPigpioOutObjectForShutter(actor, device){
@@ -52,7 +52,7 @@ module.exports.initDevices = function(params) {
       listner(sensor, device, fs, logger);
     }
   }
-
+  //TODO Auslagern in neue Datei
   function listner(sensor, device, fs, logger) {
     sensor.gpioObject.glitchFilter(10000);
     sensor.gpioObject.on('alert', (level, tick) => {

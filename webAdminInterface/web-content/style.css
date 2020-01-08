@@ -1,0 +1,21 @@
+#alexaServerStatus {
+  margin-left: 50px;
+  margin-top: 50px;
+  padding: 20px 20px 20px 20px;
+}
+#smarthomeServerStatus {
+  margin-left: 50px;
+  margin-top: 50px;
+  padding: 20px 20px 20px 20px;
+}
+
+#gpioInitialized {
+  margin-left: 50px;
+  margin-top: 100px;
+  padding: 20px 20px 20px 20px;
+}
+
+#buttonConnectToServer {
+  margin-left: 50px;
+  margin-top: 0px;
+}

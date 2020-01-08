@@ -1,3 +1,4 @@
 module.exports = {
-	countdownShutter : setTimeout(function(){}, 1000)
+	countdownShutter : setTimeout(function(){}, 1000),
+	timeouts : []
 }

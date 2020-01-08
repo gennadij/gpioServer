@@ -1,0 +1,12 @@
+{
+  "scenarios" : [
+    {
+      "name" : "wohnen links",
+      "id" : "d001",
+      "control" : "lighting",
+      "description" : "",
+      "actors" : [8,8],
+      "sensors" : [7]
+    }
+  ]
+}

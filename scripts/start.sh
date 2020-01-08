@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cd ~/smarthome/gpioServer/
+cd /home/pi/smarthome/gpioServer/
 
-sudo nohup node main.js > output.log &
+nohup node main.js > output.log &
