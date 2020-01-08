@@ -18,22 +18,22 @@ openssl
 Für eine HTTPS-Verbindung zu dem AWS-Server wird eine Zertifikat benötig. 
 Um einen eigenen Zertifikat zu erstellen werdn folgende Befehle ausgeführt.
 
-cd httpsAWSInterface
+```console
 mkdir encryption
+cd encryption
 openssl genrsa -out privatekey.pem 1024
 openssl req -new -key privatekey.pem -out certrequest.csr
 openssl x509 -req -in certrequest.csr -signkey privatekey.pem -out certificate.pem
-
-Um die Zustand der geschalteten Pin festzuhalten muss follgende Verzeichnis angelegt werden.
-
-cd db
-mkdir gpioState
-
-
+cd ../src
+npm install
+cd ..
+chmod 764 startServer.sh
+./startServer.sh
+```
 
 ## Authors
 
-* **Gennadi Heimann
+* **Gennadi Heimann**
 
 ## License
 

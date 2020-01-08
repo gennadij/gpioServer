@@ -14,7 +14,7 @@ module.exports.createLogger = function(winston) {
       myFormat
     ),
     transports: [
-      new transports.File({ filename: './logs/smarthomeServer.log'}),
+      new transports.File({ filename: './logs/gpioServer.log'}),
       new transports.Console()
     ]
   });

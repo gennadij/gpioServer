@@ -1,3 +1,8 @@
+#own
+db/gpioState/
+encryption/
+nohup.out
+
 # Logs
 logs
 *.log

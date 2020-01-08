@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/gennadij/gpioServer/issues"
   },
-  "homepage": "https://github.com/gennadij/gpioServer#readme"
+  "homepage": "https://github.com/gennadij/gpioServer#readme",
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "express": "^4.17.1",
+    "pigpio": "^2.0.1",
+    "winston": "^3.2.1"
+  }
 }

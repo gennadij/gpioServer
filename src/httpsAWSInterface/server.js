@@ -19,8 +19,8 @@ module.exports.awsInterface = function(params) {
   awsServer.use(bodyParser.json());
 
   var options = {
-    key : fs.readFileSync('./httpsAWSInterface/encryption/privatekey.pem'),
-    cert : fs.readFileSync( './httpsAWSInterface/encryption/certificate.pem')
+    key : fs.readFileSync('./encryption/privatekey.pem'),
+    cert : fs.readFileSync( './encryption/certificate.pem')
   }
   logger.info(initDescoveryEndpoints)
   awsServer.use((req, res, next) => {
